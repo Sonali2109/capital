@@ -7,12 +7,19 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
+<<<<<<< Updated upstream
     "start:db":"cd packages/db/prisma && npx prisma studio",
     "generate:db":"cd packages/db && npx prisma generate && cd ../..",
     "start:frontend":"cd apps/web && npm run start",
     "start:backend":"cd apps/http && npm run dev",
     "migrate:db":"cd packages/db/prisma && npx prisma migrate dev",
     "seed:db":"cd packages/db/prisma && npx prisma db seed"
+=======
+    "start:db": "cd packages/db/prisma && npx prisma studio",
+    "generate:db": "cd packages/db && npx prisma generate && cd ../..",
+    "start:frontend": "cd apps/web && npm run start",
+    "start:backend": "cd apps/http && npm run dev"
+>>>>>>> Stashed changes
   },
   "devDependencies": {
     "prettier": "^3.6.2",
@@ -26,5 +33,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@repo/types": "^1.0.0"
+  }
 }
